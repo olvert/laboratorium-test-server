@@ -1,0 +1,10 @@
+doctype html
+html(lang="en")
+  head
+    link(rel='stylesheet', href='https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css')
+
+  body.h-screen.flex.flex-col.items-center.justify-center.bg-gray-200
+    h1.bg-indigo-600.text-3xl.px-6.my-4 #{current}
+    div.flex.flex-col
+      for l in links
+        a(href='' + l).bg-green-500.px-6.my-1 #{l}
